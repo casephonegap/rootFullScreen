@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+		xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="at.case.rootfullscreen"
+    version="1.0.0">
+
+	<name>rootFullScreen</name>
+	<description>real fullscreen on rootet android</description>
+	<license>MIT</license>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>    
+
+	<js-module src="www/rootfullscreen.js" name="rootfullscreen">
+		<clobbers target="rootfullscreen" />
+	</js-module>
+    
+	<platform name="android">
+		<config-file target="config.xml" parent="/*">
+			<feature name="rootFullScreen">   
+				<param name="android-package" value="at.case.rootfullscreen.rootFullScreen"/>
+			</feature>
+		</config-file>
+		
+		<source-file src="src/android/at/case/rootfullscreen/rootFullScreen.java" target-dir="src/at/case/rootfullscreen"/>
+	</platform>
+    
+</plugin>   
+    
