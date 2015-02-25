@@ -2,7 +2,7 @@
 <plugin 
 		xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="at.case.rootfullscreen"
+    id="at.casephonegap.rootfullscreen"
     version="1.0.0">
 
 	<name>rootFullScreen</name>
@@ -24,7 +24,7 @@
 			</feature>
 		</config-file>
 		
-		<source-file src="src/android/at/case/rootfullscreen/rootFullScreen.java" target-dir="src/at/case/rootfullscreen"/>
+		<source-file src="src/android/at/casephonegap/rootfullscreen/rootFullScreen.java" target-dir="src/at/casephonegap/rootfullscreen"/>
 	</platform>
     
 </plugin>   
