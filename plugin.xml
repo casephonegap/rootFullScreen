@@ -20,7 +20,7 @@
 	<platform name="android">
 		<config-file target="config.xml" parent="/*">
 			<feature name="rootFullScreen">   
-				<param name="android-package" value="at.case.rootfullscreen.rootFullScreen"/>
+				<param name="android-package" value="at.casephonegap.rootfullscreen.rootFullScreen"/>
 			</feature>
 		</config-file>
 		
