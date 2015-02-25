@@ -71,7 +71,8 @@ public class rootFullScreen extends CordovaPlugin
     }
     else 
     { callback.error("Unknown Action: " + action);
-      return false;
+      //return false;
     }
+  return false;
   }
 }
