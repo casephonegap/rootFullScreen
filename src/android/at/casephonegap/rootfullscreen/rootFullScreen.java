@@ -40,13 +40,6 @@ public class rootFullScreen extends CordovaPlugin
         return true;
       }
       catch(Exception ex) { Log.d("Fullscreen Plugin", ex.getMessage()); }
-
-      /*cordova.getActivity().runOnUiThread( new Runnable() 
-      { public void run() 
-        { cordova.getActivity().getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON);
-        }
-      });
-      return true;*/
     } 
     else if (action.equalsIgnoreCase("disable")) 
     { try
@@ -61,13 +54,6 @@ public class rootFullScreen extends CordovaPlugin
         return true;
       }
       catch(Exception ex) { Log.d("Fullscreen Plugin", ex.getMessage()); }
-
-      /*cordova.getActivity().runOnUiThread( new Runnable() 
-      { public void run() 
-        { cordova.getActivity().getWindow().clearFlags(LayoutParams.FLAG_KEEP_SCREEN_ON);
-        }
-      });
-      return true;*/
     }
     else 
     { callback.error("Unknown Action: " + action);
