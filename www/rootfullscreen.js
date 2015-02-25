@@ -1,10 +1,6 @@
-function rootFullScreen () {
-	this.fsOnFlag = false;
-};
+function rootFullScreen() { this.fsOnFlag = false; };
 
-/*
-* hide android software buttons
-*/
+/* hide android software buttons */
 rootFullScreen.prototype.enable = function () 
 { if (this.fsOnFlag == false) 
   { this.fsOnFlag = true;
@@ -12,9 +8,7 @@ rootFullScreen.prototype.enable = function ()
   }
 };
 
-/*
-* show android software buttons
-*/
+/* show android software buttons */
 rootFullScreen.prototype.disable = function () 
 { if (this.fsOnFlag == true) 
   { this.fsOnFlag = false;
